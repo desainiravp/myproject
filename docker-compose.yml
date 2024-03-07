@@ -2,9 +2,7 @@ version: '3.8'
 
 services:
   app:
-    build:
-      image: myproject:2.1.1
-      context: .
+    image: myproject:2.1.1
     ports:
       - "3000:3000"  # Map port 3000 on host to port 3000 in container
 
