@@ -1,5 +1,6 @@
 version: '3.8'
-app:
+services:
+  app:
       image: myproject:1.1.1
       ports:
         - "3000"  # Map port 3000 on host to port 3000 in container
