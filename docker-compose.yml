@@ -9,6 +9,8 @@ services:
       - "3000:3000"  # Map port 3000 on host to port 3000 in container
     volumes:
       - ./app:/app  # Map the local 'app' directory to '/app' in the container
+    networks:
+      - my_network
 
 networks:
   my_network:
