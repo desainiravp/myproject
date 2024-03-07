@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm install --production
 
 # Copy the rest of the application code to the working directory
-COPY . .
+COPY ./app ./
 
 # Expose port 3000 (optional)
 EXPOSE 3000
